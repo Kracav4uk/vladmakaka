@@ -18,7 +18,7 @@
   <div id="test-container">Завантаження тестів...</div>
 
   <script>
-    const OPENROUTER_API_KEY = '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'; // 🔁 ВСТАВ СВІЙ КЛЮЧ
+    const OPENROUTER_API_KEY = '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'; // 🔁 ВСТАВ СВІЙ КЛЮЧ
 
     function createTestElement(test, index) {
       const div = document.createElement('div');
@@ -67,7 +67,7 @@
             "Authorization": `Bearer ${OPENROUTER_API_KEY}`
           },
           body: JSON.stringify({
-            model: "deepseek/deepseek-v3-base:free",
+            model: "deepseek/deepseek-r1:free",
             messages: [
               { role: "system", content: "Ти медичний експерт. Поясни, чому правильна відповідь правильна.Також поясни чому не підходять неправильні відповіді. Це все коротко." },
               { role: "user", content: prompt }
